@@ -2,6 +2,7 @@
 
 用WDCGAN和DCNN实现MNIST数据集风格的手写体数字生成，可以指定输出数字
 
+
 WDCGAN.py产生生成器和判别器，生成器保存为netG.pkl
 
 DCNN.py产生识别器，结果保存为netI.pkl
