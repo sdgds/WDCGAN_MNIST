@@ -1,3 +1,7 @@
 # WDCGAN_MNIST
 
 用WDCGAN和DCNN实现MNIST数据集风格的手写体数字生成，可以指定输出数字
+
+WDCGAN.py产生生成器和判别器，生成器保存为netG.pkl
+DCNN.py产生识别器，结果保存为netI.pkl
+Category_WDCGAN.py提取netG和netI，前1000步使用随机刺激方法，如果1000步内产生了5个合格的随机刺激，则用这5个刺激的平均作为netG的输入向量；如果1000步内没有产生5个合格的随机刺激就转入AM方法求netG的输入向量
